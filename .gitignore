@@ -1,0 +1,13 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+*.tfplan
+
+# Python
+__pycache__/
+*.pyc
+.python_packages/
+
+# Azure Functions local settings (contains secrets)
+local.settings.json
