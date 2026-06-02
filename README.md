@@ -4,6 +4,8 @@ Terraform-managed Azure infrastructure that automatically extracts structured da
 
 ## Architecture
 
+![Architecture](docs/architecture.png)
+
 | Component | Resource | Purpose |
 |---|---|---|
 | Storage Account (docs) | `stdocs{env}{suffix}` | `raw` input container, `processed` output container, `extractions` Table Storage index |
