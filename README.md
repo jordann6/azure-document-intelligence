@@ -1,5 +1,7 @@
 # Azure Serverless Document Intelligence
 
+[![Validate](https://github.com/jordann6/azure-document-intelligence/actions/workflows/validate.yml/badge.svg)](https://github.com/jordann6/azure-document-intelligence/actions/workflows/validate.yml)
+
 Terraform-managed Azure infrastructure that automatically extracts structured data from documents uploaded to Blob Storage. Dropping any file into the `raw` container triggers an Azure Function, which submits the document to Azure AI Document Intelligence (prebuilt-document model), writes the extracted key-value pairs and content to a `processed` container as JSON, and records metadata in Table Storage for fast querying. All service-to-service authentication uses Managed Identity — no keys or connection strings stored in application config.
 
 ## Architecture
